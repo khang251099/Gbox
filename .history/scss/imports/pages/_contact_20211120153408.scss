@@ -1,0 +1,20 @@
+.contactwrapper{
+    .menu{
+        &__item-wrap{
+            border-bottom:unset;
+        }
+    }
+    .intro{
+        background:url(../../../img/img-cafe-banner.png) no-repeat center / cover;
+        height:100vh;
+        .contact__item{
+            &-bottom{
+                display:grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-column-gap: 60px;
+                color:$white-cl;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.contactwrapper{
+    .menu{
+        &__item-wrap{
+            border-bottom:unset;
+        }
+    }
+    .intro{
+        background:url(../../../img/img-cafe-banner.png) no-repeat center / cover;
+    }
+}

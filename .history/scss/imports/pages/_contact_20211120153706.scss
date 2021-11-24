@@ -1,0 +1,31 @@
+.contactwrapper{
+    .menu{
+        &__item-wrap{
+            border-bottom:unset;
+        }
+    }
+    .intro{
+        background:url(../../../img/img-cafe-banner.png) no-repeat center / cover;
+        height:100vh;
+        background-attachment: fixed;
+        // text-align:unset;
+        .contact__item{
+           
+            .info{
+                text-align:right;
+                &:not(first-child){
+                    margin-left:60px;
+                }
+            }
+            
+            &-bottom{
+                display:flex;
+           
+                justify-content:center;
+                color:$white-cl;
+                text-transform: uppercase;
+                margin-left:-60px;
+            }
+        }
+    }
+}

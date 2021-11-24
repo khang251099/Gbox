@@ -1,0 +1,18 @@
+.aboutwrapper{
+    .intro{
+       
+            .title{
+                font-size:36px;
+                color:$yellow-cl;
+                letter-spacing: 0.6em;
+                text-align:left;
+                line-height:58px
+                // max-width:330px;
+            }
+            .desc{
+                text-align:left;
+                max-width:unset;
+            }
+        
+    }
+}

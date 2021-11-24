@@ -1,0 +1,26 @@
+.detailswrapper{
+    .details{
+        &__item-top{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            position:relative;
+            .name{
+                text-transform:uppercase;
+            }
+            .back-all{
+                display:flex;
+                align-items:center;
+                justify-content: flex-end;
+                position: absolute;
+                left:50%;
+
+            }
+            .full-screen{
+                display:flex;
+                align-items:center;
+                justify-content: flex-end;
+            }
+        }
+    }
+}

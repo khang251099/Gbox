@@ -1,0 +1,10 @@
+// css header
+header{
+    height: --height-header;
+    background-color: $gray-cl;
+    .header__item-wrap{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

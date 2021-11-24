@@ -1,0 +1,74 @@
+.studioDetailsWrapper{
+    .studio-details{
+        padding-top:60px;
+        
+        .details{
+            &__item-wrap{
+                .details{
+                    &__top{
+                        padding-bottom:24px;
+                        .back-all {
+                            display: flex;
+                            justify-content: flex-end;
+                            .back{
+                                display:block;
+                                margin-left:30px;
+                            }
+                        }
+                    }
+                    &__center{
+                        position:relative;
+                        overflow:hidden;
+                        height:0;
+                        padding-bottom:48%;
+                        img{
+                            @include midimg;
+                        }
+                    }
+                    &__bottom{
+                        display:flex;
+                        justify-content: space-around;
+                        .details{
+                            &-number{
+                                @include size(120px,115px);
+                                background-color: $yellow-cl;
+                                text-align:center;
+                                h4{
+                                    font-size:1.6rem;
+                                    font-family: pr;
+                                    text-transform: uppercase;
+                                    margin-top:27px;
+
+                                }
+                                .number{
+                                    font-size:6.1rem;
+                                    line-height:50px;
+                                }
+                            }
+                            &-control{
+                                display:flex;
+                                justify-content: space-between;
+                                .plan{
+                                    display:flex;
+                                }
+                                .full{
+                                    display:flex;
+                                }
+                                .control{
+                                    display:flex;
+                                    .btn{
+                                        display:flex;
+                                    }
+                                }
+                            }
+                        }
+                      
+                    }
+                   
+                }
+
+            }
+          
+        }
+    }
+}

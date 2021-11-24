@@ -1,0 +1,93 @@
+.studiowrapper{
+    .studio{
+        padding-top:60px;
+        &__item-wrap{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-column-gap: 20px;
+        }
+        &__item{
+            margin-bottom:70px;
+            &:hover{
+                .img-studio{
+                    filter: grayscale(0);
+                    -webkit-filter: grayscale(0);
+                    -moz-filter: grayscale(0);
+                }
+                .content.--right{
+                    background-color:$gray-cl;
+                 
+                    h4{
+                        color:$white-cl;
+                    }
+                    p{
+                        color:$white-cl;
+                    }
+                    .arrow{
+                        filter: grayscale(0);
+                    -webkit-filter: grayscale(0);
+                    -moz-filter: grayscale(0);
+                    }
+                }
+            }
+        }
+        &-img{
+            position: relative;
+            overflow: hidden;
+            height:0;
+            padding-bottom:62%; 
+            .img-studio{
+                        @include midimg;
+                        filter: grayscale(100%);
+                        -webkit-filter: grayscale(100%);
+                        -moz-filter: grayscale(100%);
+            }
+        }
+        &-content{
+            display:flex;
+            align-items:center;
+            .content{
+                height:120px;
+                &.--left{
+                    width:121px;
+                    background-color:$yellow-cl;
+                    text-align: center;
+                    h3{
+                        padding-top:25px;
+                    }
+                    .number{
+                        font-size:61px;
+                        font-family: pb;
+                        margin-top:15px;
+                    }
+                }
+                &.--right{
+                    display:flex;
+                  
+                    color:$black-cl;
+                    width:100%;
+                    padding-left:80px;
+                    padding-top:28px;
+                    h4{
+                        font-size:12px;
+                        line-height:3.48rem;
+                        font-family: pr;
+                        text-transform:uppercase;
+                    }
+                    .desc.--right{
+                        padding-left:60px;
+                        .arrow{
+                            display:block;
+                            margin:0 auto;
+                            filter: grayscale(100%);
+                            -webkit-filter: grayscale(100%);
+                            -moz-filter: grayscale(100%);
+                           
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

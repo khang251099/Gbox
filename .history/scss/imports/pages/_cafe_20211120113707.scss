@@ -1,0 +1,52 @@
+.cafewrapper{
+    .menu__item-wrap{
+        border-bottom:0;
+    }
+    .intro{
+        .banner-main{
+            // position:relative;
+            // overflow:hidden;
+            // height:0;
+            // padding-bottom:80%;
+        }
+        padding-top:0;
+        position:relative;  
+        .content{
+            @include absoluteCenter('both');
+            margin-top:33px;
+            // padding-bottom:27px;
+            .heading{
+               h3{
+                color:$yellow-cl;
+               } 
+            }
+            .title{
+                h2{
+                    background-color:transparent;
+                    color:$yellow-cl;
+                }
+            }
+            .desc{
+                p{
+                    strong{
+                        color:$white-cl;
+                    }
+                    color:$white-cl;
+                    &::after{
+                        background-color:$yellow-cl;
+                    }
+                    margin-bottom:22px;
+                }
+            }
+            .gallery{
+                padding-bottom
+                p{
+                    text-transform: uppercase;
+                    color:$white-cl;
+                    font-family: pr;
+                    letter-spacing: 0.2em;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.rentalwrapper{
+ 
+    .intro{
+        .rental__item-wrap{
+            display:flex;
+            .rental-info{
+                @include size(260px,640px);
+                background-color: $gray-cl;
+                display:flex;
+                // align-items:center;
+                // justify-content:center;
+                flex-direction: column;
+                .rental__content{
+                    @include size(120px);
+                    background-color: $yellow-cl;
+                }
+            }
+        }
+    
+
+    }
+}

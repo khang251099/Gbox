@@ -1,0 +1,14 @@
+.rentalwrapper{
+ 
+    .intro{
+        .rental__item-wrap{
+            display:flex;
+            .rental-info{
+                @include size(260px,640px);
+                background-color: $gray-cl;
+            }
+        }
+    
+
+    }
+}

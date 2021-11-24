@@ -1,0 +1,111 @@
+
+.homewrapper{
+   
+    
+    .product{
+        &-tab{
+            text-align:center;
+
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            margin-left:-40px;
+            margin-bottom:20px;
+            a{
+                &:not(first-child){
+                    margin-left:40px;
+                    color:$black-cl;
+                    font-family: pb;
+                    text-transform:uppercase;
+                    opacity: 0.5;
+                }
+                &.active{
+                   opacity:1;
+                }
+            }
+        }
+        &-list{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-column-gap: 20px;
+            
+        }
+        &-image{
+            height:0;
+            position:relative;
+            overflow: hidden;
+            padding-bottom:60%;
+            &:before {
+                content: "";
+                 @include size(100%);
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: $black-cl;
+                opacity: 0;
+                z-index: 10;
+                pointer-events: none;
+                @include transition($t);
+              }
+              &:hover{
+                img { 
+                  @include transform(translate(-50%, -50%) scale(1.05));
+                  @include transition($t);
+               
+                }
+                &:before {
+                  opacity: 0.4;
+                  @include transition($t);
+                }
+              }
+            img{
+                @include midimg;
+                @include transform(translate(-50%, -50%) scale(1));
+            }
+        }
+        &-item{
+            margin-bottom:70px;
+           
+        }
+        &-content{
+            text-align:center;
+        }
+        &-title{
+            margin-top:40px;
+            p{
+                text-transform: uppercase;
+                font-family: pb;
+                position: relative;
+                padding-bottom:5px;
+                margin-bottom:10px;
+                &::after{
+                    content:'';
+                    @include size(16px,3px);
+                    background-color: $yellow-cl;
+                    @include absoluteCenter('left');
+                    bottom:0;
+                
+                }
+            }
+        }
+        &-client,.product-photo,.product-director{
+            font-family: pr;
+            color:$black-cl;
+            span{
+                font-style: italic;
+            }
+        }
+        .more-products{
+            text-align:center;
+            padding-bottom:75px;
+            a{
+                color:$black-cl;
+               text-transform: uppercase;
+               font-family: pb;
+               line-height:3.48rem;
+            }
+        }
+    }
+    
+    
+}

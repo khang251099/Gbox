@@ -1,0 +1,15 @@
+.cafewrapper{
+    .menu__item-wrap{
+        border-bottom:0;
+    }
+    .intro{
+        padding-top:0;
+        position:relative;  
+        .content{
+            @include absoluteCenter('both');
+            .heading{
+                color:$yellow-cl;
+            }
+        }
+    }
+}

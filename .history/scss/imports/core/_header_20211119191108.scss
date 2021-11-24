@@ -1,0 +1,31 @@
+// css header
+header{
+    height: var(--height-header);
+    background-color: $gray-cl;
+    position:relative;
+    .header__item{
+        &-wrap{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+          
+        }
+        &-icon{
+            @include absoluteCenter('both');
+            right:13.5%;
+            left:unset;
+        }
+        &-logo{
+            @include absoluteCenter('both');
+           img{
+            //    @include midimg
+           }
+        }
+    }
+}
+
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none !important;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}

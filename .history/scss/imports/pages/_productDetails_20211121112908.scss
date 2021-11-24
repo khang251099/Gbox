@@ -1,0 +1,95 @@
+.detailswrapper{
+    .details{
+        &__item-top{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            position:relative;
+            padding-top:60px;
+            padding-bottom:38px;
+            .name{
+                text-transform:uppercase;
+            }
+            .back-all{
+                display:flex;
+                align-items:center;
+                justify-content: flex-end;
+                .back{
+                    margin-left:30px;
+                }
+                
+            }
+            .full-screen{
+                display:flex;
+                align-items:center;
+                justify-content: flex-end;
+                position: absolute;
+                left:70.5%;
+                @include xs{
+                    display:none;
+                }
+                .full{
+                  margin-left:20px;
+                }
+
+            }
+        }
+        &__item-bottom{
+            display:flex;
+            justify-content: space-between;
+             padding-bottom:80px;
+            padding-top:40px;
+            @include xs{
+              flex-direction: column;
+            }
+            .desc-details{
+                h3{
+                    font-size:14px;
+                    line-height:22px;
+                    font-family: pr;
+                    text-transform:uppercase;  margin-bottom:20px;
+                }
+                @include xs{
+                    order:2;
+                }
+                p{
+                  
+                    max-width:330px;
+                }
+            }
+            .client{
+                @include xs{
+                    order:1;
+                }
+                h3{
+                    font-size:14px;
+                    line-height:22px;
+                    font-family: pr;
+                    text-transform:uppercase;
+                    margin-bottom:20px;
+                }
+                p{  
+                    font-style: italic;
+                }
+            }
+            .team{
+                h3{
+                    font-size:14px;
+                    line-height:22px;
+                    font-family: pr;
+                    text-transform:uppercase;
+                    margin-bottom:20px;
+                }
+                p{
+                    text-transform:uppercase;  
+                    font-family: pr;
+                  
+                    span{
+                        text-transform:none;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+}

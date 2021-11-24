@@ -1,0 +1,89 @@
+.contactpage {
+  .contactwrapper {
+    .menu {
+      &__item-wrap {
+        border-bottom: unset;
+      }
+    }
+    .intro {
+      background: url(../../../img/img-cafe-banner.png) no-repeat center / cover;
+      max-height: 464px;
+      background-attachment: fixed;
+      .contact {
+        &.mobile {
+          display: none;
+          @include sm {
+            display: none;
+          }
+          @include xs {
+            display: block;
+          }
+        }
+      }
+      @include xs {
+        background-attachment: unset;
+        height: 100vh;
+        background-position: 34% 50%;
+      }
+      .contact__item {
+        &-left {
+          @include xs {
+            color: $white-cl;
+            letter-spacing: 0.1em;
+          }
+        }
+        &-mobile {
+          @include xs {
+            color: $white-cl;
+            letter-spacing: 0.1em;
+          }
+        }
+        &-top {
+          display: block;
+          @include xs {
+            display: none;
+          }
+        }
+
+        &-bottom {
+          display: flex;
+
+          justify-content: center;
+          color: $white-cl;
+          text-transform: uppercase;
+          margin-left: -60px;
+          margin-top: 40px;
+          margin-bottom: 60px;
+          @include xs {
+            display: none;
+          }
+          .info {
+            text-align: right;
+            letter-spacing: 0.1em;
+            font-family: pr;
+            line-height: 30.48px;
+            &:not(first-child) {
+              margin-left: 60px;
+            }
+          }
+        }
+      }
+      .arrow-down {
+        padding-bottom: 20px;
+        @include xs {
+          display: none;
+        }
+      }
+    }
+  }
+  .footer {
+    padding-top: unset;
+    .footer__bottom {
+      @include xs {
+        .footer__final {
+          margin-top: unset;
+        }
+      }
+    }
+  }
+}

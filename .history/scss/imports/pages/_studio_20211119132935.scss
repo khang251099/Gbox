@@ -1,0 +1,56 @@
+.studiowrapper{
+    .studio{
+        padding-top:60px;
+        &__item-wrap{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-column-gap: 20px;
+        }
+        &__item{
+            margin-bottom:70px;
+            &:hover{
+                .content.--right{
+                    background-color:$gray-cl;
+                    color:$white-cl;
+                }
+            }
+        }
+        &-img{
+            position: relative;
+            overflow: hidden;
+            height:0;
+            padding-bottom:62%; 
+            .img-studio{
+                        @include midimg;
+            }
+        }
+        &-content{
+            display:flex;
+            align-items:center;
+            .content{
+                height:120px;
+                &.--left{
+                    width:121px;
+                    background-color:$yellow-cl;
+                    text-align: center;
+                    h3{
+                        padding-top:25px;
+                    }
+                    .number{
+                        font-size:61px;
+                        font-family: pb;
+                        margin-top:15px;
+                    }
+                }
+                &.--right{
+                    display:flex;
+                    align-items:center;
+                    color:$black-cl;
+                    width:100%;
+                    
+                }
+            }
+            
+        }
+    }
+}

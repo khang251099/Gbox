@@ -1,0 +1,13 @@
+.homewrapper {
+  .intro {
+    @include sm {
+      margin-top: 50px;
+    }
+  }
+
+  .contact {
+    @include xs {
+      padding-bottom: 50px;
+    }
+  }
+}

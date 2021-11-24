@@ -1,0 +1,92 @@
+.rentalwrapper{
+ 
+    .intro{
+        .rental__item-wrap{
+            display:flex;
+            .rental-info{
+                @include size(260px,640px);
+                background-color: $gray-cl;
+                display:flex;
+                // align-items:center;
+                // justify-content:center;
+                flex-direction: column;
+                .rental__content{
+                    margin-top:70px;
+                    @include size(120px);
+                    background-color: $yellow-cl;
+                    margin-left:20px;
+                    text-align:center;
+                    display:flex;
+                    align-items:center;
+                    flex-direction: column;
+                    justify-content: center;
+                    h4{
+                        text-transform: uppercase;
+                        font-size:pr;
+                        line-height:20px;
+                    }
+                    .number{
+                        font-size:61px;
+                    
+                        margin-top:20px;
+
+                    }
+                }
+                .rental__info{
+                    margin-left:20px;
+                    margin-top:30px;
+                    h4{
+                        color:$white-cl;
+                        font-family: pb;
+                        font-size:3.2rem;
+                        line-height:3.48rem;
+                        margin-bottom:13px;
+
+                    }
+                    p{
+                        color:$white-cl;
+                        font-size:14px;
+                        font-family: pr;
+                        &.heading{
+                            font-size:12px;
+                            font-family: pr;
+                            letter-spacing:0.2em;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+            .rental-detail{
+                margin-left:50px;
+                margin-top:75px;
+                h3{
+                    font-size:28px;
+                    text-transform: none;
+                    font-family: pb;
+                    letter-spacing:0;
+                }
+                .rental__form{
+                    .rental__form-item{
+                        &.--left{
+                            form{
+                                input{
+                                    border:none;
+                                    outline:none;
+                                    border-bottom:1px solid $black-cl;
+                                }
+                                input[type="text"] {
+                                    width:220px;
+                                }
+                                input[type="number"] {
+                                    width:220px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+
+    }
+}

@@ -1,0 +1,39 @@
+// css header
+header{
+    height: var(--height-header);
+    background-color: $gray-cl;
+    position:relative;
+    .header__item{
+        &-wrap{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+          
+        }
+        &-icon{
+            // @include absoluteCenter('both');
+            // right:13.5%;
+            // left:unset;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &-logo{
+            @include absoluteCenter('both');
+           img{
+            //    @include midimg
+           }
+        }
+        &-menu{
+            // @include size(22px,15px);
+            // span{
+            //     @include size(100%,1%);
+            //     background-color:$yellow-cl;
+            // }
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+        }
+    }
+}
+

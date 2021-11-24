@@ -1,0 +1,31 @@
+
+.homewrapper{
+    .menu{
+        padding-top:45px;
+      
+       
+        &__item-wrap{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            text-transform: uppercase;
+            font-family:pb;
+            border-bottom:1px solid $black-cl;
+            padding-bottom:20px;
+            .center{
+                &__item{
+                    display:flex;
+                    align-items: center;
+                    margin-left:-60px;
+                    li{
+                        &:not(first-child){
+                            margin-left:60px;
+                            width:calc(25% -60px);
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

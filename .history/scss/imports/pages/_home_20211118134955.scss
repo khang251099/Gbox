@@ -1,0 +1,22 @@
+
+.homewrapper{
+    .menu{
+        
+        &__item-wrap{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            text-transform: uppercase;;
+            .center{
+                &__item{
+                    display:flex;
+                    align-items: center;
+                    li{
+                        font-family:pb;
+                    }
+                }
+
+            }
+        }
+    }
+}

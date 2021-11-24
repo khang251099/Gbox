@@ -1,0 +1,23 @@
+// css header
+header{
+    height: 70px;
+    background-color: $gray-cl;
+    position:relative;
+    .header__item{
+        &-wrap{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &-icon{
+            position:absolute;
+            right:10%;
+        }
+        &-logo{
+            @include absoluteCenter('both');
+           img{
+            //    @include midimg
+           }
+        }
+    }
+}

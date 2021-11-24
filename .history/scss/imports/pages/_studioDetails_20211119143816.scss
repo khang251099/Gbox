@@ -1,0 +1,26 @@
+.studioDetailsWrapper{
+    .studio-details{
+        padding-top:60px;
+        
+        .details{
+            &__item-wrap{
+                .details{
+                    &__top{
+                        padding-bottom:24px;
+                        .back-all {
+                            display: flex;
+                            justify-content: flex-end;
+                            .back{
+                                display:block;
+                                margin-left:30px;
+                            }
+                        }
+                    }
+                   
+                }
+
+            }
+          
+        }
+    }
+}

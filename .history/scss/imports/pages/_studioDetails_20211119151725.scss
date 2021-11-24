@@ -1,0 +1,117 @@
+.studioDetailsWrapper{
+    .studio-details{
+        padding-top:60px;
+        
+        .details{
+            &__item-wrap{
+                .details{
+                    &__top{
+                        padding-bottom:24px;
+                        .back-all {
+                            display: flex;
+                            justify-content: flex-end;
+                            .back{
+                                display:block;
+                                margin-left:30px;
+                            }
+                        }
+                    }
+                    &__center{
+                        position:relative;
+                        overflow:hidden;
+                        height:0;
+                        padding-bottom:48%;
+                        img{
+                            @include midimg;
+                        }
+                    }
+                    &__bottom{
+                        display:flex;
+                        justify-content: space-around;
+                            align-items:center;
+                        .details{
+                            &-number{
+                                @include size(120px,115px);
+                                background-color: $yellow-cl;
+                                text-align:center;
+                                h4{
+                                    font-size:1.6rem;
+                                    font-family: pr;
+                                    text-transform: uppercase;
+                                    margin-top:27px;
+
+                                }
+                                .number{
+                                    font-size:6.1rem;
+                                    line-height:60px;
+                                }
+                            }
+                            &-dimension{
+                               h4{
+                                font-size:1.6rem;
+                                font-family: pr;
+                                text-transform: uppercase;
+                                margin-top:27px;
+                                letter-spacing: 0.2em;
+                               } 
+                               p{
+                                   font-size:14px;
+                                   line-height:20px;
+                                   font-family: pr;
+
+                               }
+                            }
+                            &-control{
+                                display:flex;
+                                justify-content: space-between;
+                                .item{
+                                    &:not(first-child){
+                                        margin-left:55px;
+                                    }
+                                }
+                                .icon{
+
+                                }
+                                .plan{
+                                    display:flex;
+                                    // margin-right:55px;
+                                    p{
+                                        font-size:12px;
+                                        line-height:30.48px;
+                                        font-family: pr;
+                                        margin-right:30px;
+                                    }
+                                }
+                                .full{
+                                    display:flex;
+                                    p{
+                                        font-size:12px;
+                                        line-height:30.48px;
+                                        font-family: pr;
+                                        margin-right:30px;
+                                    }
+
+                                }
+                                .control{
+                                    display:flex;
+                                    p{
+                                        font-size:12px;
+                                        line-height:30.48px;
+                                        font-family: pr;
+                                    }
+                                    .btn{
+                                        display:flex;
+                                    }
+                                }
+                            }
+                        }
+                      
+                    }
+                   
+                }
+
+            }
+          
+        }
+    }
+}

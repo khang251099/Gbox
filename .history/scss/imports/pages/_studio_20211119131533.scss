@@ -1,0 +1,29 @@
+.studiowrapper{
+    .studio{
+        padding-top:60px;
+        &__item-wrap{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-column-gap: 20px;
+        }
+        &__item{
+            margin-bottom:70px;
+        }
+        &-content{
+            display:flex;
+            align-items:center;
+            .content{
+                height:120px;
+                &.--left{
+                    width:121px;
+                    background-color:$yellow-cl;
+                }
+                &.--right{
+                    display:flex;
+                    align-items:center;
+                }
+            }
+            
+        }
+    }
+}

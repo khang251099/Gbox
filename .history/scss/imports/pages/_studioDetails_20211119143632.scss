@@ -1,0 +1,19 @@
+.studioDetailsWrapper{
+    .studio-details{
+        .details{
+            &__item-wrap{
+                .details__top{
+                    .back-all {
+                        display: flex;
+                        justify-content: flex-end;
+                        .back{
+                            display:block;
+                            margin-left:30px;
+                        }
+                    }
+                }
+            }
+          
+        }
+    }
+}

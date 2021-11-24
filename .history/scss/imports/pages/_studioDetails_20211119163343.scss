@@ -1,0 +1,241 @@
+.studioDetailsWrapper{
+    .studio-details{
+        padding-top:60px;
+        
+        .details{
+            &__item-wrap{
+                .details{
+                    &__top{
+                        padding-bottom:24px;
+                        .back-all {
+                            display: flex;
+                            justify-content: flex-end;
+                            .back{
+                                display:block;
+                                margin-left:30px;
+                            }
+                        }
+                    }
+                    &__center{
+                        position:relative;
+                        overflow:hidden;
+                        height:0;
+                        padding-bottom:48%;
+                        img{
+                            @include midimg;
+                        }
+                    }
+                    &__bottom{
+                        display:flex;
+                        justify-content: space-around;
+                            align-items:center;
+                            position:relative;
+                            padding-bottom:6rem;
+                            // border-bottom: 1px solid $black-cl;
+                            &:after{
+                                content:"";
+                                @include size(100%,1px);
+                                background-color:$black-cl;
+                                @include absoluteCenter('left');
+                                bottom:0;
+
+                            }
+                        .details{
+                            &-number{
+                                @include size(120px,115px);
+                                background-color: $yellow-cl;
+                                text-align:center;
+                                h4{
+                                    font-size:1.6rem;
+                                    font-family: pr;
+                                    text-transform: uppercase;
+                                    margin-top:27px;
+
+                                }
+                                .number{
+                                    font-size:6.1rem;
+                                    line-height:60px;
+                                }
+                            }
+                            &-dimension{
+                               h4{
+                                font-size:1.6rem;
+                                font-family: pr;
+                                text-transform: uppercase;
+                                margin-top:27px;
+                                letter-spacing: 0.2em;
+                               } 
+                               p{
+                                   font-size:14px;
+                                   line-height:20px;
+                                   font-family: pr;
+
+                               }
+                            }
+                            &-control{
+                                display:flex;
+                                justify-content: space-between;
+                                margin-left:-55px;
+                                .item{
+                                    &:not(first-child){
+                                        margin-left:55px;
+                                    }
+                                }
+                                .icon{
+
+                                }
+                                .plan{
+                                    display:flex;
+                                    align-items:center;
+                                    p{
+                                        font-size:12px;
+                                        line-height:30.48px;
+                                        font-family: pr;
+                                        margin-right:30px;
+                                    }
+                                }
+                                .full{
+                                    display:flex;
+                                    align-items:center;
+                                    p{
+                                        font-size:12px;
+                                        line-height:30.48px;
+                                        font-family: pr;
+                                        margin-right:30px;
+                                    }
+
+                                }
+                                .control{
+                                    display:flex;
+                                    align-items:center;
+                                    p{
+                                        font-size:12px;
+                                        line-height:30.48px;
+                                        font-family: pr;
+                                    }
+                                    .btn{
+                                        display:flex;
+                                        align-items:center;
+                                        p{
+                                            font-size:12px;
+                                            font-family: pr;
+                                        }
+                                        &.--prev{
+                                            padding-right:20px;
+                                            p{
+                                                margin-left:20px;
+                                            }
+                                          
+
+                                        }
+                                        &.--next{
+                                            padding-left:20px;
+                                            position:relative;
+                                            &::before{
+                                                content:'';
+                                                @include size(1px,50%);
+                                                background-color: $black-cl;
+                                                @include absoluteCenter('left'); 
+                                                left:0;
+                                            }
+                                            // border-left:1px solid $black-cl;
+                                         
+                                            p{
+                                                margin-right:20px;
+
+                                            }
+                                           
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                      
+                    }
+                   
+                }
+
+            }
+          
+        }
+    }
+    .pricing{
+        &__item-wrap{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:60px;
+        }
+        &__item{
+            .title{
+                font-size:32px;
+                font-family: pb;
+                text-transform: none;
+                padding-top:33px;
+                letter-spacing:0;
+                padding-bottom:30px;
+            }
+            p{
+                font-size:14px;
+                font-family:pr;
+                padding-bottom:30px;
+            }
+            table,tr {
+                border: 1px solid black;
+                td{
+                    padding:20px 60px;
+                    font-size:14px;
+                }
+               
+              }
+              
+              table {
+                width: 100%;
+                border-collapse: collapse;
+              }
+              &.--right{
+                position:relative;
+                .border-gradient{
+                  border-style: solid;
+                  border-width: 5px;
+                  border-image: linear-gradient(#dc0a37 10%,$black-cl 20%,#29be7a 70%) 1;
+                 @include size(270px);
+                 background-color: $gray-cl;
+                 @include absoluteCenter('top');
+                 top:72%;
+                padding-top:140px;
+                padding-left:36px;
+                
+                 h4{
+                     text-transform: uppercase;
+                     color:$white-cl;
+                     font-family: pb;
+                 }
+                 .desc{
+                     padding-bottom:0;
+                     color:$white-cl;
+                 }
+                 .area{
+                     position: absolute;
+                     top: 0;
+                     right: 0;
+                     @include size(130px,105px);
+                     @include transform(translate(5px, -5px));
+                     background-color: $yellow-cl;
+                     display:flex;
+                     flex-direction: column;
+                     align-items: center;
+                     justify-content: center;
+                     h4{
+                         color:$black-cl;
+                     }
+                     p{
+                        color:$black-cl;
+                        padding-bottom:0;
+                     }
+                 }
+                 
+                }
+              }
+        }
+    }
+}

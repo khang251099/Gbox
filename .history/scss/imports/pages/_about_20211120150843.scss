@@ -1,0 +1,32 @@
+.aboutwrapper{
+    .intro{
+       
+            .title{
+                font-size:36px;
+                color:$yellow-cl;
+                letter-spacing: 0.6em;
+                text-align:left;
+                line-height:58px
+                // max-width:330px;
+            }
+            .desc{
+                text-align:justify;
+                max-width:795px;
+                margin:unset;
+            }
+            .btn-book{
+                padding-top:60px;
+                display:flex;
+                align-items:stretch;
+                .book-now{
+                    margin: unset;
+                    margin-right:15px;
+                }
+               p{
+                   max-width:110px;
+                   text-align:left;
+               }
+            }
+        
+    }
+}

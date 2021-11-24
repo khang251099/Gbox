@@ -1,0 +1,26 @@
+.workwrapper{
+    .product{
+        padding-top:70px;
+    }
+    .more-products{
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        position:relative;
+        .btn-book{
+            display:flex;
+            align-items:stretch;
+            p{
+                max-width:120px;
+            }
+            
+            position: absolute;
+        
+            right: 0;
+            .book-now{
+                margin-left:20px;
+            }
+        }
+        
+    }
+}

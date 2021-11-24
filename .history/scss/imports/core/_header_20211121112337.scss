@@ -1,0 +1,40 @@
+
+header{
+    height: var(--height-header);
+    background-color: $gray-cl;
+
+    .container{
+    height:100%;
+    }
+    .header__item{
+        &-wrap{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            height:100%;
+            position:relative;
+        }
+        &-icon{
+         
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right:0;
+        }
+        &-logo{
+            @include absoluteCenter('both');
+           img{
+           }
+        }
+        &-menu{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                display:none;
+                @include xs{
+                    display:block;
+                }
+        }
+    }
+}
+

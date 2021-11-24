@@ -1,0 +1,21 @@
+.studiowrapper{
+    .studio{
+        padding-top:60px;
+        &__item-wrap{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-column-gap: 20px;
+        }
+        &-content{
+            display:flex;
+            align-items:center;
+            .content{
+                &.--right{
+                    display:flex;
+                    align-items:center;
+                }
+            }
+            
+        }
+    }
+}

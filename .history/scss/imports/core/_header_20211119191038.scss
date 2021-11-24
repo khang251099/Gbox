@@ -1,0 +1,29 @@
+// css header
+header{
+    height: var(--height-header);
+    background-color: $gray-cl;
+    position:relative;
+    .header__item{
+        &-wrap{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+          
+        }
+        &-icon{
+            @include absoluteCenter('both');
+            right:13.5%;
+            left:unset;
+        }
+        &-logo{
+            @include absoluteCenter('both');
+           img{
+            //    @include midimg
+           }
+        }
+    }
+}
+
+// input[type=number] {
+//     -moz-appearance: textfield;
+//   }

@@ -1,0 +1,10 @@
+.studiowrapper{
+    .studio{
+        padding-top:60px;
+        &__item-wrap{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+
+        }
+    }
+}

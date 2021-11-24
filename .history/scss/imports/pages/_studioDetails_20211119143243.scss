@@ -1,0 +1,15 @@
+.studioDetailsWrapper{
+    .studio-details{
+        .details{
+            &__top{
+                .back-all{
+                    display:flex;
+                    justify-content:flex-end;
+                    .back{
+                        margin-left:30px;
+                    }
+                }
+            }
+        }
+    }
+}

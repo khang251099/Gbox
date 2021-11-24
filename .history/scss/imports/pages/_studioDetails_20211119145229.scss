@@ -1,0 +1,52 @@
+.studioDetailsWrapper{
+    .studio-details{
+        padding-top:60px;
+        
+        .details{
+            &__item-wrap{
+                .details{
+                    &__top{
+                        padding-bottom:24px;
+                        .back-all {
+                            display: flex;
+                            justify-content: flex-end;
+                            .back{
+                                display:block;
+                                margin-left:30px;
+                            }
+                        }
+                    }
+                    &__bottom{
+                        display:flex;
+                        justify-content: space-around;
+                        .details{
+                            &-number{
+                                @include size(120px,115px)
+                            }
+                            &-control{
+                                display:flex;
+                                justify-content: space-between;
+                                .plan{
+                                    display:flex;
+                                }
+                                .full{
+                                    display:flex;
+                                }
+                                .control{
+                                    display:flex;
+                                    .btn{
+                                        display:flex;
+                                    }
+                                }
+                            }
+                        }
+                      
+                    }
+                   
+                }
+
+            }
+          
+        }
+    }
+}

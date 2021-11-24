@@ -1,0 +1,33 @@
+.detailswrapper{
+    .details{
+        &__item-top{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            position:relative;
+            padding-top:60px;
+            .name{
+                text-transform:uppercase;
+            }
+            .back-all{
+                display:flex;
+                align-items:center;
+                justify-content: flex-end;
+                
+            }
+            .full-screen{
+                display:flex;
+                align-items:center;
+                justify-content: flex-end;
+                position: absolute;
+                left:70.5%;
+                img{
+                   position: absolute;
+                   right:20%;
+                   transform: translateX(20%);
+                }
+
+            }
+        }
+    }
+}

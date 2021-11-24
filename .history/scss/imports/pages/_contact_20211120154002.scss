@@ -1,0 +1,37 @@
+.contactwrapper{
+    .menu{
+        &__item-wrap{
+            border-bottom:unset;
+        }
+    }
+    .intro{
+        background:url(../../../img/img-cafe-banner.png) no-repeat center / cover;
+        height:100vh;
+        background-attachment: fixed;
+        // text-align:unset;
+        .contact__item{
+           
+         
+            &-bottom{
+                display:flex;
+           
+                justify-content:center;
+                color:$white-cl;
+                text-transform: uppercase;
+                margin-left:-60px;
+                margin-top:40px;
+                padding-bottom:60px;
+                .info{
+                    text-align:right;
+                    letter-spacing: 0.1em;
+                    font-family: pr;
+                    line-height:30.48px;
+                    &:not(first-child){
+                        margin-left:60px;
+                    }
+                }
+                
+            }
+        }
+    }
+}

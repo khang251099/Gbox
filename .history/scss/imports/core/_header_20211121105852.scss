@@ -1,0 +1,36 @@
+// css header
+header{
+    height: var(--height-header);
+    background-color: $gray-cl;
+    position:relative;
+    .header__item{
+        &-wrap{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+          
+        }
+        &-icon{
+         
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right:13.5%;
+        }
+        &-logo{
+            @include absoluteCenter('both');
+           img{
+           }
+        }
+        &-menu{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                display:none;
+                @include xs{
+                    display:block;
+                }
+        }
+    }
+}
+

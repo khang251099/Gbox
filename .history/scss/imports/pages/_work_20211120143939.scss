@@ -1,0 +1,17 @@
+.workwrapper{
+    .product{
+        padding-top:70px;
+    }
+    .more-products{
+        display:flex;
+        justify-content: center;
+        align-items:center;
+    
+        .btn-book{
+            display:flex;
+            align-items:stretch;
+            // justify-content:flex-end;
+        }
+        
+    }
+}

@@ -1,0 +1,305 @@
+.rentalwrapper{
+ 
+    .intro{
+        text-align:unset;
+        .rental__item-wrap{
+            display:flex;
+            @include xs{
+                flex-direction: column;
+            }
+            .rental-info{
+                @include size(260px,635px);
+                background-color: $gray-cl;
+                display:flex;
+                flex-direction: column;
+
+                @include xs{
+                    flex-direction: row;
+                    @include size(unset);
+                    background-color:$white-cl;
+                }
+                .rental__content{
+                    margin-top:70px;
+                    @include size(120px);
+                    background-color: $yellow-cl;
+                    margin-left:20px;
+                    text-align:center;
+                    display:flex;
+                    align-items:center;
+                    flex-direction: column;
+                    justify-content: center;
+                    @include xs{
+                        margin-top:unset;
+                        margin-left:unset;
+                    }
+                    h4{
+                        text-transform: uppercase;
+                        font-size:pr;
+                        line-height:20px;
+                    }
+                    .number{
+                        font-size:61px;
+                    
+                        margin-top:20px;
+
+                    }
+                }
+                .rental__info{
+                    margin-left:20px;
+                    margin-top:30px;
+                    @include xs{
+                        margin-top:unset;
+                    }
+                    h4{
+                        color:$white-cl;
+                        font-family: pb;
+                        font-size:3.2rem;
+                        line-height:3.48rem;
+                        margin-bottom:13px;
+                        @include xs{
+                            color:$black-cl;
+
+                        }
+
+                    }
+                    p{
+                        color:$white-cl;
+                        font-size:14px;
+                        font-family: pr;
+                        @include xs{
+                            color:$black-cl;
+                        }
+                        &.heading{
+                            font-size:12px;
+                            font-family: pr;
+                            letter-spacing:0.2em;
+                            text-transform: uppercase;
+                            @include xs{
+                             margin: unset; 
+                            }
+                        }
+                    }
+                }
+            }
+            .rental-detail{
+                margin-left:50px;
+                margin-top:75px;
+                @include xs{
+                    margin-left:unset;
+                }
+                h3{
+                    font-size:28px;
+                    text-transform: none;
+                    font-family: pb;
+                    letter-spacing:0;
+                }
+                .rental__form{
+                   
+                    display:flex;
+                    justify-content:flex-start;
+                    margin-left:-78px;
+                    @include xs{
+                 display:block;
+                    }
+                    .rental__form-item{
+                        margin-top:50px;
+                        @include xs{
+                            margin-top:30px;
+                        }
+                        &:not(first-child){
+                            margin-left:78px;
+                        }
+                        &.--left{
+                            form{
+                                input{
+                                    border:none;
+                                    outline:none;
+                                    border-bottom:1px solid $black-cl;
+                                }
+                                input[type="text"] {
+                                    width:220px;
+                                }
+                                input[type="number"] {
+                                    width:220px;
+                                }
+                                .contact{
+                                    margin-top:25px;
+                                    display:inline-block;
+                                    @include xs{
+                                        border-top:unset;
+                                    }
+                                }
+                                .phone{
+                                    margin-top:25px;
+                                    display:inline-block;
+                                }
+                            }
+                        }
+                        &.--right{
+                            form{
+                                input{
+                                    border:none;
+                                    outline:none;
+                                    border-bottom:1px solid $black-cl;
+                                }
+                                input[type="text"] {
+                                    width:220px;
+                                    @include xs{
+                                        width:100% !important;
+                                    }
+                                }
+                                input[type="email"] {
+                                    width:220px;
+                                    @include xs{
+                                        width:100% !important;
+                                    }
+                                }
+                                .account{
+                                    margin-top:25px;
+                                    display:inline-block;
+                                }
+                                .address{
+                                    margin-top:25px;
+                                    display:inline-block;
+                                }
+                                textarea{
+                                    width:220px;
+                                    height:85px;
+                                    border:1px solid $black-cl;
+                                    resize: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                .rental-bottom{
+                    padding-top:48px;
+                    .text{
+                        margin-top:30px;
+                        margin-bottom:10px;
+                    }
+                    .button-option{
+                        display:flex;
+                        align-items:center; 
+                          margin-left:-20px;
+                        .btn-option{
+                           
+                            button{
+                                @include size(40px);
+                                border:1px solid $black-cl;
+                                outline: none;
+                                color:$white-cl;
+                                background-color: $black-cl;
+                                cursor:pointer;
+                                .number{
+                                    font-size:24px;
+                                    font-family: pr;
+                                  
+                                }
+                                &.active{
+                                    background-color: $yellow-cl;
+                                    color:$black-cl;
+                                }
+                            }
+                            &:not(first-child){
+                                margin-left:20px;
+
+                            }
+                        }
+                      
+                    }
+                    .requirement__item{
+                        display:flex;
+                    justify-content:flex-start;
+                    margin-left:-78px;  
+                    @include xs{
+                        flex-direction: column;
+                    }
+                    .item{
+                        &.--right{
+                            .arrow {
+                                margin-left: -42px;
+                                display: inline-block;
+                                margin-right: 31px;
+                            }
+                            .note{
+                                font-style: italic;
+                            }
+                        }
+                        &:not(first-child){
+                            margin-left:78px;
+                        }
+                        label.booking {
+                            display: inline-block;
+                            margin-bottom: 25px;
+                            
+                        }
+                        label.creating {
+                            display: inline-block;
+                            margin-bottom: 25px;
+                            margin-top:30px;
+                        }
+                        input#booking{
+                            font-style: italic;
+                            font-family: pr;
+                            padding:13px 15px;
+                            width:220px;
+                            border:1px solid $black-cl;
+                        }
+                        textarea{
+                            width:220px;
+                                    height:85px;
+                                    border:1px solid $black-cl;
+                                    resize: none;
+                        }
+                    }
+                    }
+                    label.project{
+                        display:inline-block;
+                        margin-top:30px;
+                        margin-bottom:10px;
+                    }
+                    input[type="text"] {
+                        width: 517px;
+                        height:35px;
+                        border:1px solid $black-cl;
+                    }
+                    .submit{
+                        padding-bottom:80px;
+                        padding-top:70px;
+                    }
+                    .submit__item-wrap{
+                        display:flex;
+                        align-items:stretch;
+                        .btn-item{
+                            a{
+                                @include size(100px);
+                                background-color:$gray-cl;
+                                display:block;
+                                border-radius: 10px;
+                                p{
+                                    text-align:center;
+                                    font-size:20px;
+                                    line-height:30.48px;
+                                    font-family: pb;
+                                    text-transform: uppercase;
+                                    color:$yellow-cl;
+                                    padding-top:40px;
+                                }
+
+                            }
+                        }
+                        .text-item{
+                            max-width:205px;
+                            font-family: pr;
+                            padding-left:20px;
+                        }
+
+                    }
+                }
+            }
+        }
+    
+
+    }
+}

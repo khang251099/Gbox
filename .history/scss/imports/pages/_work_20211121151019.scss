@@ -1,0 +1,49 @@
+.workwrapper{
+    .product{
+        padding-top:70px;
+    }
+    .more-products{
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        position:relative;
+        @include xs{
+            height:280px;
+            flex-direction: column-reverse;
+            
+        }
+     
+        .btn-more{
+            @include xs{
+                margin-top:50px;
+            }
+        }
+        .btn-book{
+            display:flex;
+            align-items:stretch;
+            @include xs{
+                display: block !important;
+                justify-content:center;
+                right:34%;
+                position:unset;
+            }
+            
+            
+            p{
+                max-width:120px;
+                margin-top:25px;
+                @include xs{
+                    max-width:135px;
+                }
+            }
+            
+            position: absolute;
+        
+            right: 0;
+            .book-now{
+                margin-left:20px;
+            }
+        }
+        
+    }
+}

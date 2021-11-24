@@ -1,0 +1,132 @@
+// css footer
+.footer {
+
+    @include xs {
+      border-top: 1px solid $black-cl;
+      position: relative;
+    }
+    .container {
+ 
+  
+      .footer__top {
+        margin-bottom: 22px;
+        padding-left: 20px;
+        padding-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-top: 1px solid $black-cl;
+        @include xs {
+          display: block;
+          max-width: 214px;
+          margin: auto;
+          border-top: none;
+          padding-top: 60px;
+        }
+        .footer__top-left {
+          max-width: 249px;
+          @include xs {
+            max-width: 100%;
+            text-align: center;
+          }
+          .tele {
+            margin: 30px auto auto auto;
+            @include xs {
+              margin: auto;
+            }
+          }
+      
+        }
+        .footer__top-right {
+       
+          max-width: 255px;
+          @include xs {
+            display: none;
+          }
+        }
+        .footer__top-mobile {
+          display: none;
+        
+        }
+      }
+    }
+  
+    .footer__bottom {
+      background-color: $yellow-cl;
+      .container {
+        padding-left: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        @include xs {
+          display: none;
+        }
+        .address {
+          padding-top: 20px;
+          max-width: 255px;
+     
+          @include xs {
+            position: absolute;
+            max-width: 100%;
+            margin-top: -114px;
+            left: 22%;
+            text-align: center;
+          }
+        }
+        .form {
+          padding-top: 40px;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          @include xs {
+            display: none;
+          }
+          .form__right {
+            padding-left: 20px;
+            .send {
+              display: flex;
+              justify-content: flex-end;
+              margin-top: 35px;
+              margin-right: 50px;
+              a {
+                background-color: $black-cl;
+                color: white;
+                text-align: right;
+                font-size: 10px;
+                font-family: pb;
+                padding: 10px 10px;
+              }
+            }
+          }
+          label {
+            font-family: pr;
+            font-size: 12px;
+           
+          }
+          input {
+            border: none;
+            border-bottom: 1px solid black;
+            background-color: $yellow-cl;
+            width: 220px;
+            margin: 15px 0px;
+            outline: none;
+          }
+        }
+      }
+      .footer__final {
+        text-align: center;
+        padding-bottom: 173px;
+        margin-top: 53px;
+        @include xs {
+          padding-top: 50px;
+        }
+        .backtop {
+          cursor: pointer;
+          margin-bottom: 20px;
+        }
+        p {
+          font-family: pr;
+          font-size: 10px;
+          text-transform: uppercase;
+          color: $black-cl;
+        }
+      }
+    }
+  }
