@@ -54,7 +54,7 @@ center.forEach(function (val, index) {
 // });
 
 $(document).ready(function () {
-  const $carousel = $(".wrap__imge");
+  const $carousel = $(".gallery__carousel");
   $carousel.flickity({
     cellAlign: "left",
     contain: true,
@@ -64,12 +64,12 @@ $(document).ready(function () {
     freeScroll: true,
   });
 
-  $(".controls .button.--prev").on("click", function (e) {
+  $(".controls .button svg").on("click", function (e) {
     e.preventDefault();
 
     $carousel.flickity("previous");
   });
-  $(".controls .button.--next").on("click", function (e) {
+  $(".controls .button svg").on("click", function (e) {
     e.preventDefault();
 
     $carousel.flickity("next");
@@ -84,7 +84,7 @@ $(document).ready(function () {
     pageDots: false,
     wrapAround: true,
     freeScroll: true,
-
+    // prevNextButtons: false,
     on: {
       change: function (index) {
         const number = $(".details-bottom .number");

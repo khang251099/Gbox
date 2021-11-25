@@ -219,7 +219,7 @@
   //   }
   // }
   .cafe__image {
-    background-color: #19191a;
+    // background-color: $blue-cafe-cl;
     .container {
       position: relative;
       .wrap__imge {
@@ -243,11 +243,6 @@
               position: relative;
               cursor: pointer;
               overflow: hidden;
-              &:hover {
-                .cafe__image-fullscreen {
-                  opacity: 1;
-                }
-              }
               a {
                 img {
                   position: absolute;
@@ -324,12 +319,11 @@
 
       .cafe__image-fullscreen {
         position: absolute;
-        bottom: 30px;
-        left: 10px;
+        top: 577px;
+        left: 14px;
         display: flex;
         align-items: end;
         z-index: 2;
-        opacity: 0;
         @include xs {
           display: none;
         }
@@ -358,39 +352,16 @@
         justify-content: flex-end;
         margin-top: 40px;
         padding-bottom: 80px;
-        @include xs {
-          justify-content: center;
-        }
-        @include sm {
-          justify-content: center;
-        }
         .button {
-          display: flex;
-          align-items: center;
-          background-color: transparent;
-          outline: none;
-          border: unset;
-          cursor: pointer;
-          &.--next {
-            p {
-              position: relative;
-              padding-left: 20px;
-              &:before {
-                content: "";
-                @include size(1px, 100%);
-                background-color: $yellow-cl;
-                @include absoluteCenter("left");
-                left: 0;
-              }
-            }
-          }
+          // display: flex;
+          // align-items: center;
           p {
             // @include textdes;
             color: $yellow-cl;
           }
-          // .pre {
-          //   border-right: 1px solid $yellow-cl;
-          // }
+          .pre {
+            border-right: 1px solid $yellow-cl;
+          }
           .icon {
             fill: $yellow-cl;
             transform: rotate(90deg);

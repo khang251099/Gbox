@@ -24,9 +24,6 @@
               // overflow:hidden;
               // height:0;
               // padding-bottom:48%;
-              img.item {
-                width: 100% !important;
-              }
               .details {
                 img {
                   height: 100%;
@@ -36,17 +33,17 @@
               .flickity-viewport {
                 height: 100% !important;
                 .flickity-slider {
-                  .item {
-                    height: 100%;
-                    width: 100% !important;
-                  }
                   .main {
                     height: 100%;
                     width: 100%;
+                    .item {
+                      height: 100%;
+                      width: 100%;
+                    }
                   }
                   &.is-selected {
                     width: 100% !important;
-                    .item {
+                    img {
                       height: 100%;
                     }
                   }
@@ -377,9 +374,4 @@ button.flickity-button.flickity-prev-next-button.previous {
   @include xs {
     top: 50%;
   }
-}
-
-img.item {
-  width: 100%;
-  height: 477px;
 }

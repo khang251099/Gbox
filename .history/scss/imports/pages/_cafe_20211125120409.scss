@@ -243,11 +243,6 @@
               position: relative;
               cursor: pointer;
               overflow: hidden;
-              &:hover {
-                .cafe__image-fullscreen {
-                  opacity: 1;
-                }
-              }
               a {
                 img {
                   position: absolute;

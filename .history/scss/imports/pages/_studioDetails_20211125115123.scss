@@ -36,13 +36,13 @@
               .flickity-viewport {
                 height: 100% !important;
                 .flickity-slider {
-                  .item {
-                    height: 100%;
-                    width: 100% !important;
-                  }
                   .main {
                     height: 100%;
                     width: 100%;
+                    .item {
+                      height: 100%;
+                      width: 100%;
+                    }
                   }
                   &.is-selected {
                     width: 100% !important;
@@ -377,9 +377,4 @@ button.flickity-button.flickity-prev-next-button.previous {
   @include xs {
     top: 50%;
   }
-}
-
-img.item {
-  width: 100%;
-  height: 477px;
 }
