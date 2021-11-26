@@ -94,8 +94,7 @@ $(document).ready(function () {
     },
   });
 
-  // $studio.flickity("viewFullscreen");
-  // $carousel.flickity("exitFullscreen");
+  $studio.flickity("viewFullscreen");
   $(".details-control .btn.--prev a").on("click", function (e) {
     e.preventDefault();
 

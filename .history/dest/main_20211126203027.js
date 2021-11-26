@@ -76,8 +76,8 @@ $(document).ready(function () {
   });
 });
 
-const $studio = $(".studio__carousel .details__center");
 $(document).ready(function () {
+  const $studio = $(".studio__carousel .details__center");
   $studio.flickity({
     cellAlign: "left",
     contain: true,
@@ -94,8 +94,6 @@ $(document).ready(function () {
     },
   });
 
-  // $studio.flickity("viewFullscreen");
-  // $carousel.flickity("exitFullscreen");
   $(".details-control .btn.--prev a").on("click", function (e) {
     e.preventDefault();
 
