@@ -34,11 +34,11 @@
       }
       a {
         text-transform: uppercase;
-        color: $white-cl;
+        color: $black-cl;
         font-family: pb;
         font-size: 16px;
         &:hover {
-          color: $black-cl;
+          color: $white-cl;
         }
       }
     }
