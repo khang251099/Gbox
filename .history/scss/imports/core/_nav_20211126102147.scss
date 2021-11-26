@@ -17,20 +17,19 @@
       text-align: center;
       z-index: 100;
       opacity: 0;
-
+    
       @include transform(translateX(-100%));
-      @include transition(0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67));
+    @include transition(0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67));
       &.active {
         opacity: 1;
         pointer-events: auto;
-        @include transition($t);
+      @include transition($t);
         @include transform(translateX(0%));
       }
       ul {
         @include transform(translateY(-10%));
         li {
           padding: 10px 0;
-          color: $black-cl;
         }
       }
       a {
